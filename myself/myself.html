@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+	<html lang="fr">
+
+		<head>
+			<!-- TITLE -->
+			<title>| Preforming | Myself</title>
+			<!-- META -->
+			<meta charset="utf-8">
+			<meta name="keywords" content="HTML, CSS">
+			<meta name="author" content="Audrey Antony">
+			<meta name="description" content="Projet de fin de préformation de la classe de dev web de CF2M">
+			<!-- LIEN PAGE DE STYLE -->
+			<link rel="stylesheet" type="text/css" href="../style/style.css">
+			<!-- LIEN PAGE JAVASCRIPT -->
+			<script type="text/javascript" src="script.js"></script>
+			<!-- POLICES SUPPLEMANTAIRES -->
+			<link href="https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Open+Sans:300&display=swap" rel="stylesheet"> 
+		</head>
+
+		<body id="hdp">
+
+			
+			<!-- HEADER -->
+
+			<header>
+
+				<div class="wrapper">
+					<!-- TITLE -->
+					<h1 id="title">preforming<span class="rouge">.</span></h1>
+
+					<nav>
+						<ul>
+							<li class="rouge"><a href="../index.html">accueil</a></li>
+							<li class="rouge"><a href="../interview/interview.html">interview</a></li>
+							<li class="rouge"><a href="../eb/eb.html">eB!</a></li>
+							<li class="rouge"><a href="myself.html">myself</a></li>
+						</ul>
+					</nav>
+					
+				</div>
+
+			</header>
+
+			<!-- INTRO ET IMAGE -->
+			<section class="mainimagemyself">
+				
+				<div class="lowtexte">
+
+					<h3><span class="rouge">_ </span>Audrey <span class="smalltexte">ANTONY</span></h3>
+
+					<p class="centertexte">Etudiante depuis <script type="text/javascript">
+						function diffdate(d1,d2){
+						var jours = d2.getTime() - d1.getTime();
+						return Math.ceil(jours/(1000*60*60*24));
+						}
+
+						var Date1 = new Date(2020,0,6);
+						var Date2 = new Date();
+						 
+						document.write(diffdate(Date1,Date2) + " jours");</script> <br>
+						je trouve que le calme est une vertue et que l'air est plus pur dans la nature. <br>Pour mon mètre quatre-vingt huit <br>le plafond de la maison des 7 nains est trop bas.</p>
+
+				</div>
+
+			</section>
+
+			<!-- SEPARATEUR -->
+			<hr>
+			
+
+			<!-- SECTION CONCLUSION SUR L'INTERVIEW-->
+			<section class="wrapper">
+				
+				<div>
+					<h3>Le futur <span class="rouge">...</span></h3>
+
+					<p>Après l'interview faite pour ce site je peux confirmer que ce métier me correspond, je m'imaginais déjà le métier comme Sylvain me l'a décrit et les changements soudains et les troubles de communications peuvent être des challenges intéressants. <br>Comme lui je suis passionnée, même si c'est arrivé tardivement et j'ai hâte de pouvoir exercer une profession dans laquelle je pourrais m'épanouir.</p>
+				</div>
+
+				<div>
+					<h3>Le stage <span class="rouge">!</span></h3>
+
+					<p id="stage">Je pense choisir une société plus grande qu'EarlyTracks pour mon stage de fin de formation, car j'aimerais avoir plusieurs personnes comme Sylvain pour m'aiguiller et me conseiller pendant cette période. J'apprécierais avoir un maximum de point de vue et de méthode à observer.<br> Par contre, l'aspect sécurité des données m'intéresse beaucoup, ainsi que le fait de travailler sur plusieurs petits projets en même temps.</p>
+				</div>
+
+			</section>
+
+
+			<!-- SEPARATEUR -->
+			<hr>
+
+			<section id="galerie">
+				<div class="ligne">
+
+			 		<div class="colone">
+			   			<img src="../img/folder/petit1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			  		</div>
+
+			  		<div class="colone">
+			    		<img src="../img/folder/petit2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			  		</div>
+
+			  		<div class="colone">
+			    		<img src="../img/folder/petit3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			  		</div>
+
+				</div>
+
+				<!-- AFFICHÉ AU CLICK -->
+				<div id="macondition" class="condition">
+			  		<span class="croix" onclick="closeModal()">&times;</span>
+			  			<div class="inside-condition">
+
+				   			<div class="grossesimages">
+				     		 	<div class="numphoto">1 / 3</div>
+				     		 	<img src="../img/folder/gros1.jpg" style="width:100%">
+				    		</div>
+
+			    			<div class="grossesimages">
+			      				<div class="numphoto">2 / 3</div>
+			      				<img src="../img/folder/gros2.jpg" style="width:100%">
+			   				</div>
+
+			   				<div class="grossesimages">
+			      				<div class="numphoto">3 / 3</div>
+			      				<img src="../img/folder/gros3.jpg" style="width:100%">
+			   				</div>
+
+			    			<!-- PREC / SUIV -->
+			   				<a class="prec" onclick="plusSlides(-1)">&#10094;</a>
+			    			<a class="suiv" onclick="plusSlides(1)">&#10095;</a>
+
+			    			<!-- TITRE PHOTO -->
+			   				<div class="box-titre">
+			     				<p id="titre"></p>
+			   				</div>
+
+
+			   				<!-- LIENS IMAGES -->
+			    			<div class="flex-container-photo">
+			  					<div class="colone">
+			     					<img class="demo" src="../img/folder/mini1.jpg" onclick="currentSlide(1)" alt="Site test de 2018">
+			   					</div>
+
+			   					<div class="colone">
+			     					<img class="demo" src="../img/folder/mini2.jpg" onclick="currentSlide(2)" alt="Photoshop préfo web 2020">
+			   					</div>
+
+			    				<div class="colone">
+			     					<img class="demo" src="../img/folder/mini3.jpg" onclick="currentSlide(3)" alt="Site fait pour la préfo web2020">
+			    				</div>
+			    			</div>
+
+
+			  			</div>
+				</div>
+			</section>
+
+
+			<!-- BOUTON HAUT DE PAGE -->
+			<section class="wrapperwithheight">
+				<a href="#hdp">
+					<button class="boutonhdp">
+					Haut de page ▲
+					</button>
+				</a>
+			</section>
+
+		
+			<!-- FOOTER  -->
+			<footer>
+				<!-- LISTE DES LIENS -->
+				<div class="wrapper">
+					<ul>
+						<li><a href="../index.html">accueil</a></li>
+						<li><a href="../interview/interview.html">interview</a></li>
+						<li><a href="../eb/eb.html">eB!</a></li>
+						<li><a href="myself.html">myself</a></li>
+					</ul>
+					<ul>
+						<li><a href="https://www.visit.brussels/en/sites/experiencebrussels" target="_blank">eB!</a></li>
+						<li><a href="https://www.cf2m.be/" target="_blank">cf2m</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<p>audrey antony © 2020</p>
+				</div>
+
+			</footer>
+
+			<script>
+				// OUVRIR LES PHOTOS
+				function openModal() {
+				  document.getElementById("macondition").style.display = "block";
+				}
+
+				// FERMETURE
+				function closeModal() {
+  				document.getElementById("macondition").style.display = "none";
+				}
+
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				// FLECHES PREC/SUIV
+				function plusSlides(n) {
+  				showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+  				showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+  				var i;
+  				var slides = document.getElementsByClassName("grossesimages");
+  				var dots = document.getElementsByClassName("demo");
+  				var captionText = document.getElementById("titre");
+
+  				if (n > slides.length) {slideIndex = 1}
+
+ 				if (n < 1) {slideIndex = slides.length}
+
+  				for (i = 0; i < slides.length; i++) {
+ 		   		slides[i].style.display = "none";
+  				}
+
+  				for (i = 0; i < dots.length; i++) {
+  				  dots[i].className = dots[i].className.replace(" active", "");
+ 				 }
+
+  				slides[slideIndex-1].style.display = "block";
+
+  				dots[slideIndex-1].className += " active";
+
+  				captionText.innerHTML = dots[slideIndex-1].alt;
+  				
+				}
+			</script>
+
+		</body>
+
+	</html>
