@@ -1,7 +1,8 @@
 
 /*MEMO DU DOC
-	Couleur du background : #c8c8c8;
-	Couleur de la police principale : #42433E;
+	Couleur du background : #c8c8c8
+	Couleur de la police principale : #42433E
+	Couleur foncé
 	Couleur titre supplémentaire :#EAEAEA;
 	Couleur claire supplémentaire : #D2D2D2;
 
@@ -13,6 +14,7 @@
 
 * {
 	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -63,10 +65,6 @@ hr {
 	border-bottom: 2px solid #42433E;
 }
 
-
-
-
-
 /*CLASS GÉNERAL*/
 
 .wrapper {
@@ -84,14 +82,21 @@ hr {
 
 
 .boutonhdp {
-	background-color: #A11D1E;
+	background-color: #D2D2D2;
+	font-family: 'BioRhyme Expanded', serif;
+	font-size: 0.6em;
 	border: none;
-	color: #D2D2D2;
+	color: #A11D1E;
 	padding: 15px 30px;
 	text-align: center;
 	margin: 45px 25px 0 720px;
+
 }
 
+.boutonhdp:hover {
+	background-color: #A11D1E;
+	color: #D2D2D2;
+}
 
 
 
@@ -141,8 +146,6 @@ header nav ul li a:hover {
 
 
 
-
-
 /*BACKGROUND PRINCIPAUX*/
 
 .mainimagemontagne {
@@ -173,9 +176,6 @@ header nav ul li a:hover {
 	height: 750px;
 }
 
-
-
-
 /*BACKGROUND IMAGE FLEXBOX*/
 
 #interview {
@@ -189,9 +189,6 @@ header nav ul li a:hover {
 #myself {
 	background-image: url(../img/myself.jpg);
 }
-
-
-
 
 
 /*FLEXBOX*/
@@ -213,10 +210,6 @@ header nav ul li a:hover {
  	transition:  width 2s;
  }
 
-
-
-
-
  /*FLEXBOX HOVERS*/
 
 
@@ -224,10 +217,6 @@ header nav ul li a:hover {
  	width: 315px;
  	transition: 2s;
  }
-
-
-
-
 
  /*INSIDE FLEX DIV*/
 
@@ -255,10 +244,6 @@ header nav ul li a:hover {
 	color: #D2D2D2;
 }
 
-
-
-
-
 /*SECTION CODE IMG ET TEXTE*/
 
 #htmlcssjs {
@@ -282,9 +267,6 @@ header nav ul li a:hover {
 }
 
 
-
-
-
 /*CONTACT INPUT*/
 
 form {
@@ -303,8 +285,20 @@ textarea {
 	margin-bottom: 25px;
 }
 
+.boutonenvoyer {
+	background-color: #D2D2D2;
+	color: #A11D1E;
+	padding: 3px 0;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 'BioRhyme Expanded', serif;
+	border: none;
+}
 
-
+.boutonenvoyer:hover {
+	background-color: #A11D1E;
+	color: #D2D2D2;
+}
 
 
 /*FOOTER*/
@@ -350,10 +344,6 @@ footer div p {
 	font-family: 'BioRhyme Expanded', serif;
 }
 
-
-
-
-
 /*PAGE BRUXELLES*/
 
 .lowtexte {
@@ -397,9 +387,6 @@ footer div p {
 }
 
 
-
-
-
 /*PAGE INTERVIEW*/
 
 .centertexte {
@@ -441,11 +428,8 @@ footer div p {
 }
 
 #introinterview {
-	padding-bottom: 65px;
+	margin: 65px auto 55px auto;
 }
-
-
-
 
 
 /*PAGE MYSELF*/
@@ -453,14 +437,6 @@ footer div p {
 #stage {
 	margin-bottom: 85px;
 }
-
-
-
-
-
-
-
-
 
 
 /*
@@ -500,8 +476,6 @@ footer div p {
   padding: 10px auto;
 }
 
-
-
 /* CONTENU CACHÉ FOND D'ÉCRAN */
 .condition {
   display: none;
@@ -526,8 +500,6 @@ footer div p {
   max-width: 740px;
 }
 
-
-
 /* CROIX EXIT */
 .croix {
   color: #42433E;
@@ -545,14 +517,10 @@ footer div p {
   cursor: pointer;
 }
 
-
-
 /* CACHETTE DES GROSSES IMAGES */
 .grossesimages {
   display: none;
 }
-
-
 
 /* BOUTON DE NAVIGATION PHOTOS */
 .prec,
@@ -579,16 +547,12 @@ footer div p {
   border-radius: 3px 0 0 3px;
 }
 
-
-
 /* HOVERs BOUTONS */
 .prec:hover,
 .suiv:hover {
   background-color: rgba(200, 200, 200, 0.7);
   color: #A11D1E;
 }
-
-
 
 /* NUMÉROs DES PHOTOS */
 .numphoto {
@@ -598,8 +562,6 @@ footer div p {
   padding: 8px 12px;
   position: absolute;
 }
-
-
 
 /* TITRE */
 .box-titre {
@@ -632,8 +594,6 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.2), 0 6px 20px 0 rgba(160, 160, 160, 0.19);
 }
-
-
 
 /*FLEX CONTAINER PHOTO*/
 .flex-container-photo {
